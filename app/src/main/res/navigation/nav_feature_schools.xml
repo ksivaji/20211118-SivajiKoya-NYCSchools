@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_feature_schools"
+    app:startDestination="@id/fragment_schools">
+
+    <fragment
+        android:id="@+id/fragment_schools"
+        android:name="com.safeway.nycschools.ui.SchoolsListFragment"
+        android:label="NYC School List"
+        tools:layout="@layout/schools_list_fragment">
+
+        <action
+            android:id="@+id/acton_go_to_school_detail"
+            app:destination="@id/schoolDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/schoolDetailFragment"
+        android:name="com.safeway.nycschools.ui.SchoolDetailFragment"
+        android:label="{toolbarTitle}"
+        tools:layout="@layout/school_detail_fragment" >
+        <argument
+            android:name="schoolDbnId"
+            app:argType="string" />
+        <argument
+            android:name="toolbarTitle"
+            app:argType="string"
+            android:defaultValue='""' />
+    </fragment>
+
+</navigation>

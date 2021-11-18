@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NYCSchools</string>
+
+    <string name="school_list_empty">No schools found. Try again later.</string>
+    <string name="title_school_list">Schools List</string>
+    <string name="btn_retry">Retry</string>
+
+    <string name="error_no_network">No network available, please check your Wi-Fi or Data connection</string>
+    <string name="satResults">SAT Results</string>
+    <string name="math">Average Math Score</string>
+    <string name="reading">Average Reading Score</string>
+    <string name="writing">Average Writing Score</string>
+
+</resources>
